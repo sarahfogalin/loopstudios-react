@@ -46,7 +46,7 @@ const App = () => {
   }, [isMenuOpen]);
 
   return (
-    <div>
+    <div className="App">
       {!isDesktop && <Menu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />}
       <Header dimensions={dimensions} setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <div className="spacer" />
