@@ -9,7 +9,7 @@
 
 /* desktop */
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   body {
     max-width: 100%;
     overflow-x: hidden;
@@ -62,7 +62,7 @@
 
 /* mobile */
 
-@media screen and (max-width: 768px) {
+@media screen (max-width: 768px) {
   body {
     max-width: 100%;
     overflow-x: hidden;

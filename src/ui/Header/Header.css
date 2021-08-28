@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
     .header-nav-button {
         padding-bottom: 8px;
         border: none;
@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .hero-image {
         width: 100vw;
     }
