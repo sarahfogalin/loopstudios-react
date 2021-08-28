@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
     .copyright {
         font-family: 'Alata', sans-serif;
         font-weight: initial;
@@ -58,7 +58,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .copyright {
         padding: 4vw 0;
         font-family: 'Alata', sans-serif;
