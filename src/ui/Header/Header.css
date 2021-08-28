@@ -1,0 +1,72 @@
+@media screen and (min-width: 769px) {
+    .header-nav-button {
+        padding-bottom: 8px;
+        border: none;
+        font-family: 'Alata', sans-serif;
+        font-weight: initial;
+        font-size: 1.5vw;
+        background-color: transparent;
+        color: var(--white);
+    }
+    .header-nav-button:hover {
+        --position: center bottom;
+        --width: 18px;
+        --height: 2px;
+        padding-bottom: 8px;
+        background: linear-gradient(var(--white), var(--white)) var(--position) / var(--width) var(--height) no-repeat;
+        cursor: pointer;
+    }
+    .header-nav-menu {
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-image {
+        width: 100vw;
+    }
+    .logo {
+        height: 2.5vw;
+    }
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 5vw 8vw 5vw 8vw;
+    }
+    .nav-spacing {
+        width: 85vw;
+        height: 5vw;
+   
+    }
+    .slogan {
+        position: absolute;
+        top: 12vw;
+        left: 8vw;
+        width: 44vw;
+        padding: 15px;
+        border: 2px solid var(--white);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        width: 100vw;
+    }
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 8vw 5vw 45vw 5vw;
+    }
+    .nav-spacing {
+        width: 90vw;
+        height: 5vw;
+    }
+    .slogan {
+        position: absolute;
+        top: 25vh;
+        width: 80vw;
+        padding: 15px;
+        border: 2px solid var(--white);
+    }
+}

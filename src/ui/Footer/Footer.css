@@ -1,0 +1,97 @@
+@media screen and (min-width: 769px) {
+    .copyright {
+        font-family: 'Alata', sans-serif;
+        font-weight: initial;
+        font-size: 1.5vw;
+        color: var(--darkGrey);
+    }
+    .footer {
+        padding: 3vw 5vw;
+        flex-direction: column;
+        background-color: var(--black);
+    }
+    .footer-button {
+        padding-bottom: 6px;
+        border: none;
+        font-family: 'Alata', sans-serif;
+        font-weight: initial;
+        font-size: 1.5vw;
+        background-color: transparent;
+        color: var(--white);
+
+    }
+    .footer-button:hover {
+        --position: center bottom;
+        --width: 22px;
+        --height: 2px;
+        padding-bottom: 6px;
+        background: linear-gradient(var(--white), var(--white)) var(--position) / var(--width) var(--height) no-repeat;
+        cursor: pointer;
+    }
+    .footer-buttons {
+        width: 20vw;
+        height: 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .footer-logo {
+        width: 12vw;
+        padding-left: 1vw;
+    }
+    .social-media-icon {
+        padding-bottom: 8px;
+    }
+    .social-media-icon:hover {
+        --position: center bottom;
+        --width: 22px;
+        --height: 2px;
+        padding-bottom: 8px;
+        background: linear-gradient(var(--white), var(--white)) var(--position) / var(--width) var(--height) no-repeat;
+        cursor: pointer;
+    }
+    .social-media-icons {
+        width: 15vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .copyright {
+        padding: 4vw 0;
+        font-family: 'Alata', sans-serif;
+        font-weight: initial;
+        font-size: 4vw;
+        color: var(--darkGrey);
+    }
+    .footer {
+        padding: 10vw;
+        flex-direction: column;
+        background-color: var(--black);
+    }
+    .footer-button {
+        border: none;
+        font-family: 'Alata', sans-serif;
+        font-weight: initial;
+        font-size: 4vw;
+        background-color: transparent;
+        color: var(--white);
+    }
+    .footer-buttons {
+        height: 50vw;
+        padding-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footer-logo {
+        height: 8vw;
+    }
+    .social-media-icons {
+        width: 40vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}

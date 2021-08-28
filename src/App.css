@@ -1,0 +1,113 @@
+/* colors */
+
+:root {
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --darkGrey: hsl(0, 0%, 55%);
+  --darkerGrey: hsl(0, 0%, 41%);
+}
+
+/* desktop */
+
+@media screen and (min-width: 769px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    font-weight: initial;
+    color: var(--white);
+  }
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vw;
+    font-weight: initial;
+    color: var(--black);
+  }
+  h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    font-weight: initial;
+    line-height: 0vw;
+    color: var(--white);
+  }
+  p {
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5vw;
+    color: var(--darkGrey);
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  .flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .spacer {
+    height: 64px;
+  }
+  .text-center {
+    text-align: center;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12vw;
+    font-weight: initial;
+    color: var(--white);
+  }
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8vw;
+    font-weight: initial;
+    color: var(--black);
+  }
+  h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6vw;
+    font-weight: initial;
+    line-height: 0vw;
+    color: var(--white);
+  }
+  p {
+    font-family: 'Alata', sans-serif;
+    font-size: 3.5vw;
+    color: var(--darkGrey);
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  .flex-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .spacer {
+    height: 64px;
+  }
+  .text-center {
+    text-align: center;
+  }
+}
