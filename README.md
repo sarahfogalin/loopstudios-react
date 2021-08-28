@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-** add a screen shot here **
+![loop-studios_demo](https://user-images.githubusercontent.com/38594508/131225680-4c79495c-838c-477e-8991-c7de05a389f0.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Loopstudios Vercel App](https://loopstudios-react.vercel.app/)
 
 ## My process
 
