@@ -7,35 +7,40 @@
   --darkerGrey: hsl(0, 0%, 41%);
 }
 
-.App {
-    max-width: 100vw;
-    overflow-x: hidden;
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 /* desktop */
 
 @media only screen and (min-width: 769px) {
   h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 5vw;
     font-weight: initial;
     color: var(--white);
   }
   h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 3vw;
     font-weight: initial;
     color: var(--black);
   }
   h3 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 2vw;
     font-weight: initial;
     line-height: 0vw;
     color: var(--white);
   }
   p {
-    font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
     font-size: 1.5vw;
     color: var(--darkGrey);
   }
@@ -65,26 +70,26 @@
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 12vw;
     font-weight: initial;
     color: var(--white);
   }
   h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 8vw;
     font-weight: initial;
     color: var(--black);
   }
   h3 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 6vw;
     font-weight: initial;
     line-height: 0vw;
     color: var(--white);
   }
   p {
-    font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
     font-size: 3.5vw;
     color: var(--darkGrey);
   }

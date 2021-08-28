@@ -1,89 +1,89 @@
 @media only screen and (min-width: 769px) {
-    .creation-container {
-        position: relative;
-    }
-    .creation-container:hover h3{
-        position: relative;
-        color: black;
-        z-index: 1000;
-    }
-    .creations-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .creations-header {
-        width: 90vw;
-        padding: 0 4vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .creation-image {
-        width: 20vw;
-        padding: 0 1.6vw 3.2vw 1.6vw;
-    }
-    .creation-label {
-        position: absolute;
-        top: 27vw;
-        left: 5vw;
-    }
-    .overlay::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--white);
-        opacity: 0;
-        transition: .5s ease;
-    }
-    .overlay:hover::before {
-        opacity: 0.75;
-        cursor: pointer;
-    }
-    .see-all-button {
-        width: fit-content;
-        height: fit-content;
-        padding: 1vw 2.5vw;
-        border: 1px solid var(--darkerGrey);
-        font-family: 'Alata', sans-serif;
-        font-size: 1vw;
-        letter-spacing: 0.5vw;
-        font-weight: initial;
-        background-color: var(--white);
-    }
-    .see-all-button:hover {
-        border: 1px solid var(--black);
-        background-color: var(--black);
-        color: var(--white);
-        cursor: pointer;
-    }
+  .creation-container {
+    position: relative;
+  }
+  .creation-container:hover h3 {
+    position: relative;
+    color: black;
+    z-index: 1000;
+  }
+  .creations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .creations-header {
+    width: 90vw;
+    padding: 0 4vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .creation-image {
+    width: 20vw;
+    padding: 0 1.6vw 3.2vw 1.6vw;
+  }
+  .creation-label {
+    position: absolute;
+    top: 27vw;
+    left: 5vw;
+  }
+  .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+  .overlay:hover::before {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .see-all-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 1vw 2.5vw;
+    border: 1px solid var(--darkerGrey);
+    font-family: "Alata", sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0.5vw;
+    font-weight: initial;
+    background-color: var(--white);
+  }
+  .see-all-button:hover {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .creation-container {
-        position: relative;
-    }
-    .creation-image {
-        width: 90vw;
-        padding-bottom: 5vw;
-    }
-    .creation-label {
-        position: absolute;
-        top: 15vw;
-        left: 10vw;
-    }
-    .see-all-button {
-        width: fit-content;
-        padding: 2vw 8vw;
-        border: 1px solid var(--darkerGrey);
-        font-family: 'Alata', sans-serif;
-        font-size: 3.5vw;
-        letter-spacing: 1vw;
-        font-weight: initial;
-        background-color: var(--white);
-    }
+  .creation-container {
+    position: relative;
+  }
+  .creation-image {
+    width: 90vw;
+    padding-bottom: 5vw;
+  }
+  .creation-label {
+    position: absolute;
+    top: 15vw;
+    left: 10vw;
+  }
+  .see-all-button {
+    width: fit-content;
+    padding: 2vw 8vw;
+    border: 1px solid var(--darkerGrey);
+    font-family: "Alata", sans-serif;
+    font-size: 3.5vw;
+    letter-spacing: 1vw;
+    font-weight: initial;
+    background-color: var(--white);
+  }
 }

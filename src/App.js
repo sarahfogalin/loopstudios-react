@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 //styles
-import './App.css';
+import "./App.css";
 
-import Header from './ui/Header/Header';
-import About from './ui/About/About';
-import Creations from './ui/Creations/Creations';
-import Footer from './ui/Footer/Footer';
+import Header from "./ui/Header/Header";
+import About from "./ui/About/About";
+import Creations from "./ui/Creations/Creations";
+import Footer from "./ui/Footer/Footer";
 
-import Menu from './ui/Menu/Menu'
+import Menu from "./ui/Menu/Menu";
 
 export const MAX_MOBILE_SCREEN = 768;
-
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
-    width: window.innerWidth
-  })
+    width: window.innerWidth,
+  });
 
   const isDesktop = dimensions.width > MAX_MOBILE_SCREEN ? true : false;
 
@@ -26,29 +25,35 @@ const App = () => {
     const handleResize = () => {
       setDimensions({
         height: window.innerHeight,
-        width: window.innerWidth
-      })
-    }
+        width: window.innerWidth,
+      });
+    };
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  })
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
 
   return (
     <div className="App">
-      {!isDesktop && <Menu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />}
-      <Header dimensions={dimensions} setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      {!isDesktop && (
+        <Menu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      )}
+      <Header
+        dimensions={dimensions}
+        setIsMenuOpen={setIsMenuOpen}
+        isMenuOpen={isMenuOpen}
+      />
       <div className="spacer" />
       <About dimensions={dimensions} />
       <div className="spacer" />
@@ -57,6 +62,6 @@ const App = () => {
       <Footer dimensions={dimensions} />
     </div>
   );
-}
+};
 
 export default App;
