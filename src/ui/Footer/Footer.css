@@ -80,6 +80,15 @@
     background-color: transparent;
     color: var(--white);
   }
+  .footer-button:hover {
+    --position: center bottom;
+    --width: 22px;
+    --height: 2px;
+    padding-bottom: 6px;
+    background: linear-gradient(var(--white), var(--white)) var(--position) /
+      var(--width) var(--height) no-repeat;
+    cursor: pointer;
+  }
   .footer-buttons {
     height: 50vw;
     padding-bottom: 5vw;
@@ -89,6 +98,18 @@
   }
   .footer-logo {
     height: 8vw;
+  }
+  .social-media-icon {
+    padding-bottom: 8px;
+  }
+  .social-media-icon:hover {
+    --position: center bottom;
+    --width: 22px;
+    --height: 2px;
+    padding-bottom: 8px;
+    background: linear-gradient(var(--white), var(--white)) var(--position) /
+      var(--width) var(--height) no-repeat;
+    cursor: pointer;
   }
   .social-media-icons {
     width: 40vw;
