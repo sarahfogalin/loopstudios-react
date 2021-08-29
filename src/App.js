@@ -38,6 +38,7 @@ const App = () => {
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
+      document.body.style.maxHeight = "100vh";
     }
     return () => {
       document.body.style.overflow = "unset";
